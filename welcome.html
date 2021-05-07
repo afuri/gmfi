@@ -13,14 +13,28 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    
   </head>
   <body>
-    <script>
-      const i = localStorage.getItem('userID')
-      if (i) {document.location.href="/welcome.html"}
-      else {document.location.href="/enter.html"}
-       </script>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="welcome"></h1>
+        <select id="select" name="select"> 
+            <option  hidden>Выбор темы</option> 
+            <option value="presentSimple">Present Simple</option>
+            <option value="pastSimple">Past Simple</option>
+            <option value="futureSimple">Future Simple</option>
+          </select>
+        <a id="start" class="btn">Начать поход</a>
+        <a id="exit" class="btn">Выйти</a>
+        <div class="flex-center flex-column">
 
+          <h3 id="score"> </h3>       
+        </div>
+        
+    
+    </div>
+      
+    </div>
+    <script src="js/welcome.js"></script>
   </body>
 </html>
